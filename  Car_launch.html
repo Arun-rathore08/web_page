@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Launch Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            margin-bottom: 50px;
+        }
+        .hero {
+            background: url('img.webp') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .car{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .blurry-image {
+            filter: blur(10px); /* Adjust the blur intensity as needed */
+            position: relative;
+        }
+        .features, .specifications, .contact {
+            padding: 50px;
+        }
+        .features {
+            background-color: #f8f9fa;
+        }
+        .specifications {
+            background-color: #e9ecef;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .feature-item {
+            margin-bottom: 20px;
+        }
+        .spec-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .spec-list li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <img src="logo.webp" alt="Mercedes-Benz Logo" width="50">
+        <a class="navbar-brand" href="#">Mercedes-Benz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#specifications">Specifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1><strong>Welcome to the Car Launch</strong></h1>
+        <p><strong>Experience the Future of Driving</strong></p>
+        <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
+    </div>
+    <br>
+    
+    <div class = "car">
+        <h1 color="black">THE NEW ONE</h1>
+        <div id="countdown"></div>
+        <img src="iris.jpg" alt="THE NEW ONE" class="blurry-image">
+    </div>
+
+    <!-- Features Section -->
+    <div class="features" id="features">
+        <h2 class="text-center">Features</h2>
+        <p class="text-center">Discover the innovative features of our latest car model.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <h3>Design and Build</h3>
+                    <p>The G-Class has a distinctive, boxy design that has remained largely unchanged since its inception, maintaining its iconic silhouette. It is built with a focus on durability and strength, featuring a robust body-on-frame construction.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <h3>Engine and Performance</h3>
+                    <p>The G-Class is powered by various engines, including a powerful V8 engine in the G550 model, which boasts a 3982 cc displacement and significant horsepower and torque for both on-road and off-road performance.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <h3>Luxury Features</h3>
+                    <p>Despite its rugged exterior, the G-Class offers a luxurious interior with high-end materials, advanced technology, and comfort features. This includes premium leather upholstery, state-of-the-art infotainment systems, and various customization options.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <h3>Off-Road Capability</h3>
+                    <p>Known for its off-road prowess, the G-Class comes equipped with features such as three locking differentials, a low-range gear, and exceptional ground clearance, making it capable of handling extreme terrains with ease.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <h3>Hybrid System</h3>
+                    <p>The latest models incorporate modern advancements like a 48-volt hybrid system that enhances performance and efficiency. For example, the 2025 G550 comes with a turbocharged 3.0-liter inline-six engine paired with this hybrid system, producing 443 hp and 413 lb-ft of torque.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Specifications Section -->
+    <div class="specifications" id="specifications">
+        <h2 class="text-center">Specifications</h2>
+        <p class="text-center">Get to know the technical specifications and performance details.</p>
+        <div class="container">
+            <ul class="spec-list">
+                <li><strong>Engine:</strong> V8, 3982 cc, turbocharged</li>
+                <li><strong>Horsepower:</strong> 416 hp @ 5,250 rpm</li>
+                <li><strong>Torque:</strong> 450 lb-ft @ 2,000 rpm</li>
+                <li><strong>Transmission:</strong> 9-speed automatic</li>
+                <li><strong>Drivetrain:</strong> All-Wheel Drive</li>
+                <li><strong>Fuel Economy:</strong> 13 mpg city / 17 mpg highway</li>
+                <li><strong>0-60 mph:</strong> 5.6 seconds</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center">Reach out for more information or to schedule a test drive.</p>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Mercedes-Benz. All Rights Reserved.</p>
+    </div>
+    <script>
+        // Countdown timer script
+        var countDownDate = new Date("June 1, 2024 13:00:00").getTime();
+
+        var x = setInterval(function() {
+
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = "Launching in: " + days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
